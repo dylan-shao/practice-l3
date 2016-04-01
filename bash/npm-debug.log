@@ -1,0 +1,130 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/bo/soft/node-v5.0.0-linux-x64/bin/node',
+1 verbose cli   '/home/bo/soft/node/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'monggose',
+1 verbose cli   'passport',
+1 verbose cli   '--save' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData monggose
+8 silly fetchPackageMetaData passport
+9 silly fetchNamedPackageData monggose
+10 silly mapToRegistry name monggose
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/monggose
+14 silly fetchNamedPackageData passport
+15 silly mapToRegistry name passport
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/passport
+19 verbose request uri https://registry.npmjs.org/monggose
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 11:16:31 PM
+22 verbose request id e75a64bab82c833f
+23 http request GET https://registry.npmjs.org/monggose
+24 verbose request uri https://registry.npmjs.org/passport
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 11:16:31 PM
+27 verbose etag "DUSPRFRPN8VK34SKA6YYAD5CQ"
+28 http request GET https://registry.npmjs.org/passport
+29 http 304 https://registry.npmjs.org/passport
+30 verbose headers { date: 'Fri, 01 Apr 2016 03:16:31 GMT',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   'cache-control': 'max-age=300',
+30 verbose headers   etag: '"DUSPRFRPN8VK34SKA6YYAD5CQ"',
+30 verbose headers   age: '85',
+30 verbose headers   connection: 'keep-alive',
+30 verbose headers   'x-served-by': 'cache-iad2133-IAD',
+30 verbose headers   'x-cache': 'HIT',
+30 verbose headers   'x-cache-hits': '1',
+30 verbose headers   'x-timer': 'S1459480591.966519,VS0,VE0',
+30 verbose headers   vary: 'Accept' }
+31 silly get cb [ 304,
+31 silly get   { date: 'Fri, 01 Apr 2016 03:16:31 GMT',
+31 silly get     via: '1.1 varnish',
+31 silly get     'cache-control': 'max-age=300',
+31 silly get     etag: '"DUSPRFRPN8VK34SKA6YYAD5CQ"',
+31 silly get     age: '85',
+31 silly get     connection: 'keep-alive',
+31 silly get     'x-served-by': 'cache-iad2133-IAD',
+31 silly get     'x-cache': 'HIT',
+31 silly get     'x-cache-hits': '1',
+31 silly get     'x-timer': 'S1459480591.966519,VS0,VE0',
+31 silly get     vary: 'Accept' } ]
+32 verbose etag https://registry.npmjs.org/passport from cache
+33 verbose get saving passport to /home/bo/.npm/registry.npmjs.org/passport/.cache.json
+34 http 404 https://registry.npmjs.org/monggose
+35 verbose headers { 'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=0',
+35 verbose headers   'content-length': '2',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   date: 'Fri, 01 Apr 2016 03:16:32 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   age: '0',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-iad2144-IAD',
+35 verbose headers   'x-cache': 'MISS',
+35 verbose headers   'x-cache-hits': '0',
+35 verbose headers   'x-timer': 'S1459480591.960028,VS0,VE401' }
+36 silly get cb [ 404,
+36 silly get   { 'content-type': 'application/json',
+36 silly get     'cache-control': 'max-age=0',
+36 silly get     'content-length': '2',
+36 silly get     'accept-ranges': 'bytes',
+36 silly get     date: 'Fri, 01 Apr 2016 03:16:32 GMT',
+36 silly get     via: '1.1 varnish',
+36 silly get     age: '0',
+36 silly get     connection: 'keep-alive',
+36 silly get     'x-served-by': 'cache-iad2144-IAD',
+36 silly get     'x-cache': 'MISS',
+36 silly get     'x-cache-hits': '0',
+36 silly get     'x-timer': 'S1459480591.960028,VS0,VE401' } ]
+37 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/monggose
+37 silly fetchPackageMetaData     at makeError (/home/bo/soft/node-v5.0.0-linux-x64/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+37 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/home/bo/soft/node-v5.0.0-linux-x64/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+37 silly fetchPackageMetaData     at Request._callback (/home/bo/soft/node-v5.0.0-linux-x64/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+37 silly fetchPackageMetaData     at Request.self.callback (/home/bo/soft/node-v5.0.0-linux-x64/lib/node_modules/npm/node_modules/request/request.js:198:22)
+37 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+37 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
+37 silly fetchPackageMetaData     at Request.<anonymous> (/home/bo/soft/node-v5.0.0-linux-x64/lib/node_modules/npm/node_modules/request/request.js:1063:14)
+37 silly fetchPackageMetaData     at emitOne (events.js:82:20)
+37 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
+37 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/home/bo/soft/node-v5.0.0-linux-x64/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 silly fetchPackageMetaData  error for monggose { [Error: Registry returned 404 for GET on https://registry.npmjs.org/monggose] pkgid: 'monggose', statusCode: 404, code: 'E404' }
+38 silly rollbackFailedOptional Starting
+39 silly rollbackFailedOptional Finishing
+40 silly runTopLevelLifecycles Starting
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/monggose
+43 verbose stack     at makeError (/home/bo/soft/node-v5.0.0-linux-x64/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+43 verbose stack     at CachingRegistryClient.<anonymous> (/home/bo/soft/node-v5.0.0-linux-x64/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+43 verbose stack     at Request._callback (/home/bo/soft/node-v5.0.0-linux-x64/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+43 verbose stack     at Request.self.callback (/home/bo/soft/node-v5.0.0-linux-x64/lib/node_modules/npm/node_modules/request/request.js:198:22)
+43 verbose stack     at emitTwo (events.js:87:13)
+43 verbose stack     at Request.emit (events.js:172:7)
+43 verbose stack     at Request.<anonymous> (/home/bo/soft/node-v5.0.0-linux-x64/lib/node_modules/npm/node_modules/request/request.js:1063:14)
+43 verbose stack     at emitOne (events.js:82:20)
+43 verbose stack     at Request.emit (events.js:169:7)
+43 verbose stack     at IncomingMessage.<anonymous> (/home/bo/soft/node-v5.0.0-linux-x64/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+44 verbose statusCode 404
+45 verbose pkgid monggose
+46 verbose cwd /home/bo/practicing/l3/bash
+47 error Linux 3.19.0-25-generic
+48 error argv "/home/bo/soft/node-v5.0.0-linux-x64/bin/node" "/home/bo/soft/node/bin/npm" "install" "monggose" "passport" "--save"
+49 error node v5.0.0
+50 error npm  v3.3.6
+51 error code E404
+52 error 404 Registry returned 404 for GET on https://registry.npmjs.org/monggose
+52 error 404
+52 error 404 'monggose' is not in the npm registry.
+52 error 404 You should bug the author to publish it (or use the name yourself!)
+52 error 404
+52 error 404 Note that you can also install from a
+52 error 404 tarball, folder, http url, or git url.
+53 verbose exit [ 1, true ]

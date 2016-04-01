@@ -1,0 +1,25 @@
+{
+  "name": "l3",
+  "description": "",
+  "main": "",
+  "authors": [
+    "shao <yangshao2014@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "public/libs"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "bootstrap": "^3.3.6",
+    "angular-ui": "^0.4.0",
+    "angular-bootstrap": "^1.2.5"
+  }
+}
