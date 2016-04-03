@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
-<link rel="stylesheet" href="libs/angular-bootstrap/ui-bootstrap-csp.css">
-<script src="libs/angular/angular.js"></script>
-<script src="libs/angular-bootstrap/ui-bootstrap.js"></script>
-<script src="libs/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-<script src="app.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/angular-bootstrap/ui-bootstrap-csp.css">
+    <script src="libs/angular/angular.js"></script>
+    <script src="libs/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="libs/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="app.js"></script>
 </head>
 
 <body ng-app="app" ng-controller="it">
-<table class="table">
-<tr>
-    <th>Client</th>
-    <th>Candidate</th>
-    <th>Type</th>
-    <th>Date</th>
-    <th>Action</th>
-</tr>
-<tr ng-repeat="interview in interviews">
-    <td>{{interview.Client}}</td>
-    <td>{{interview.Candidate}}</td>
-    <td>{{interview.Type}}</td>
-    <td>{{interview.Date}}</td>
-    <td>{{interview.questions}}</td>
-</tr>
-</table>
-<p>{{interviews[0].Client}}</p>
+    <table class="table">
+        <tr>
+            <th>Client</th>
+            <th>Candidate</th>
+            <th>Type</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+        <tr ng-repeat="interview in interviews">
+            <td>{{interview.Client}}</td>
+            <td>{{interview.Candidate}}</td>
+            <td>{{interview.Type}}</td>
+            <td>{{interview.Date}}</td>
+            <td>
+                <button class="btn btn-success" ng-click="showQuestions(interview)">
+                    show questions
+                </button>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>
-
